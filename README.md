@@ -1,24 +1,22 @@
-# README
+# devise-rails-7-sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample App For Devise and Rails 7 with Turbo
 
-Things you may want to cover:
+## Run app 
 
-* Ruby version
+``` 
+$ bin/setup 
+$ rails s
+```
 
-* System dependencies
+## Run tests 
 
-* Configuration
+``` 
+$ rails test:all
+```
 
-* Database creation
+## Related article
+[【2023年版】Turboを有効化したままRails 7\.0でDeviseを使う方法 \- Qiita](https://qiita.com/jnchito/items/48db78c465493837c41f)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## LICENSE 
+MIT License.
