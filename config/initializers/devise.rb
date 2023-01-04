@@ -9,9 +9,7 @@ class TurboFailureApp < Devise::FailureApp
     end
   end
 
-  def skip_format?
-    is_navigational_format?
-  end
+  alias skip_format? is_navigational_format?
 end
 
 # Assuming you have not yet modified this file, each configuration option below
