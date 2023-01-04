@@ -15,8 +15,8 @@ $ rails s
 $ rails test:all
 ```
 
-## Related article
-[【2023年版】Turboを有効化したままRails 7\.0でDeviseを使う方法 \- Qiita](https://qiita.com/jnchito/items/48db78c465493837c41f)
+## Related post
+[How to customize Devise for Rails 7\.0 and Turbo \- DEV Community](https://dev.to/jnchito/how-to-customize-devise-for-rails-70-and-turbo-ih)
 
 ## LICENSE 
 MIT License.
