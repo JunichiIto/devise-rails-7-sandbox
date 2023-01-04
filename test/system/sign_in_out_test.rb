@@ -5,22 +5,22 @@ require 'application_system_test_case'
 class SignInOutTest < ApplicationSystemTestCase
   test 'sign in and sign out' do
     visit root_path
-    assert_css 'h2', text: 'ログイン'
+    assert_css 'h2', text: 'Log in'
 
-    # バリデーションエラーを発生させる
-    fill_in 'Eメール', with: 'bob@example.com'
-    fill_in 'パスワード', with: 'hogehoge'
-    click_button 'ログイン'
-    assert_text 'Eメールまたはパスワードが違います。'
+    # test validation errors
+    fill_in 'Email', with: 'bob@example.com'
+    fill_in 'Password', with: 'foobar'
+    click_button 'Log in'
+    assert_text 'Invalid Email or password.'
 
-    fill_in 'Eメール', with: 'alice@example.com'
-    fill_in 'パスワード', with: 'password'
-    click_button 'ログイン'
-    assert_text 'ログインしました。'
+    fill_in 'Email', with: 'alice@example.com'
+    fill_in 'Password', with: 'password'
+    click_button 'Log in'
+    assert_text 'Signed in successfully.'
     assert_css 'h1', text: 'Welcome!'
 
-    click_link 'ログアウト'
-    assert_text 'ログアウトしました。'
-    assert_css 'h2', text: 'ログイン'
+    click_link 'Sign out'
+    assert_text 'Signed out successfully.'
+    assert_css 'h2', text: 'Log in'
   end
 end

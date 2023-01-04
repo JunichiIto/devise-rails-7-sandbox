@@ -8,18 +8,18 @@ class EditAccountTest < ApplicationSystemTestCase
   end
 
   test 'edit account' do
-    click_link 'アカウント編集'
+    click_link 'Edit account'
 
-    # バリデーションエラーを発生させる
-    fill_in 'Eメール', with: ''
-    click_button '更新'
-    assert_text 'エラーが発生したため ユーザー は保存されませんでした。'
+    # test validation errors
+    fill_in 'Email', with: ''
+    click_button 'Update'
+    assert_text '2 errors prohibited this user from being saved'
 
-    fill_in 'Eメール', with: 'bob@example.com'
-    fill_in '現在のパスワード', with: 'password'
-    click_button '更新'
-    assert_text 'アカウント情報を変更しました。'
-    assert_text 'bob@example.com としてログイン中'
+    fill_in 'Email', with: 'bob@example.com'
+    fill_in 'Current password', with: 'password'
+    click_button 'Update'
+    assert_text 'Your account has been updated successfully.'
+    assert_text 'Account: bob@example.com'
     assert_css 'h1', text: 'Welcome!'
   end
 end

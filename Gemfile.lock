@@ -94,8 +94,6 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.10.2)
-      devise (>= 4.8.0)
     erubi (1.12.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -174,9 +172,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.4)
       loofah (~> 2.19, >= 2.19.1)
-    rails-i18n (7.0.6)
-      i18n (>= 0.7, < 2)
-      railties (>= 6.0.0, < 8)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -243,13 +238,11 @@ DEPENDENCIES
   capybara
   debug
   devise
-  devise-i18n
   importmap-rails
   jbuilder
   letter_opener_web
   puma (~> 5.0)
   rails (~> 7.0.4)
-  rails-i18n
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

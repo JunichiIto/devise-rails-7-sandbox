@@ -5,10 +5,10 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
   def sign_in_as_alice
     visit root_path
-    assert_css 'h2', text: 'ログイン'
-    fill_in 'Eメール', with: 'alice@example.com'
-    fill_in 'パスワード', with: 'password'
-    click_button 'ログイン'
-    assert_text 'ログインしました。'
+    assert_css 'h2', text: 'Log in'
+    fill_in 'Email', with: 'alice@example.com'
+    fill_in 'Password', with: 'password'
+    click_button 'Log in'
+    assert_text 'Signed in successfully.'
   end
 end

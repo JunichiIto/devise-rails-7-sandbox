@@ -8,11 +8,11 @@ class CancelAccountTest < ApplicationSystemTestCase
   end
 
   test 'cancel account' do
-    click_link 'アカウント編集'
+    click_link 'Edit account'
     accept_alert do
-      click_button 'アカウント削除'
+      click_button 'Cancel my account'
     end
-    assert_text 'アカウントを削除しました。またのご利用をお待ちしております。'
-    assert_css 'h2', text: 'ログイン'
+    assert_text 'Bye! Your account has been successfully cancelled. We hope to see you again soon.'
+    assert_css 'h2', text: 'Log in'
   end
 end
