@@ -73,4 +73,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'devise'
+gem 'devise', github: 'JunichiIto/devise', branch: 'for-turbo-stream'

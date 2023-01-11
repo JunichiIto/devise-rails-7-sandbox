@@ -19,7 +19,7 @@ class SignInOutTest < ApplicationSystemTestCase
     assert_text 'Signed in successfully.'
     assert_css 'h1', text: 'Welcome!'
 
-    click_link 'Sign out'
+    click_button 'Sign out'
     assert_text 'Signed out successfully.'
     assert_css 'h2', text: 'Log in'
   end

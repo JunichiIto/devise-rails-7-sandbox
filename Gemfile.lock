@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/JunichiIto/devise.git
+  revision: 9439e6ae65b97f5721e99a70b8e0409bd6abb3e6
+  branch: for-turbo-stream
+  specs:
+    devise (4.8.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,12 +100,6 @@ GEM
     debug (1.7.1)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
-    devise (4.8.1)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0)
-      responders
-      warden (~> 1.2.3)
     erubi (1.12.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -237,7 +243,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise
+  devise!
   importmap-rails
   jbuilder
   letter_opener_web
