@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/JunichiIto/devise.git
-  revision: 9439e6ae65b97f5721e99a70b8e0409bd6abb3e6
+  revision: 683117d722c96c2b589fd8960375257bd02d9933
   branch: for-turbo-stream
   specs:
     devise (4.8.1)
