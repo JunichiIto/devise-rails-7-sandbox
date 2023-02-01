@@ -1,7 +1,7 @@
 GIT
-  remote: https://github.com/JunichiIto/devise.git
-  revision: 683117d722c96c2b589fd8960375257bd02d9933
-  branch: for-turbo-stream
+  remote: https://github.com/heartcombo/devise.git
+  revision: f08e0ad24aa6fec6f585247c0465e0d46c6d8a94
+  branch: ca-turbo
   specs:
     devise (4.8.1)
       bcrypt (~> 3.0)
@@ -9,6 +9,15 @@ GIT
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+
+GIT
+  remote: https://github.com/heartcombo/responders.git
+  revision: fb9f787055a7a842584ce351793b249676290090
+  branch: main
+  specs:
+    responders (3.0.1)
+      actionpack (>= 5.2)
+      railties (>= 5.2)
 
 GEM
   remote: https://rubygems.org/
@@ -189,9 +198,6 @@ GEM
     regexp_parser (2.6.1)
     reline (0.3.2)
       io-console (~> 0.5)
-    responders (3.0.1)
-      actionpack (>= 5.0)
-      railties (>= 5.0)
     rexml (3.2.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.7.1)
@@ -249,6 +255,7 @@ DEPENDENCIES
   letter_opener_web
   puma (~> 5.0)
   rails (~> 7.0.4)
+  responders!
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
