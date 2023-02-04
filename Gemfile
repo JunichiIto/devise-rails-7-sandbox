@@ -74,4 +74,4 @@ group :test do
 end
 
 gem "devise", github: "heartcombo/devise", branch: "ca-turbo"
-gem "responders", github: "heartcombo/responders", branch: "main"
+gem "responders", "~> 3.1"
